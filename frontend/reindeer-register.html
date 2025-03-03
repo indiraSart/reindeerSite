@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Register Reindeer</title>
+  <link rel="stylesheet" href="../frontend/css/style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Register Reindeer</h1>
+    <form id="reindeerForm">
+      <input type="text" id="serialNumber" placeholder="Serial Number" name="serialNumber" required>
+      <input type="text" id="name" placeholder="Name" name="name" required>
+      <input type="text" id="herd" placeholder="Herd" name="herd" required>
+      <input type="date" id="birthDate" name="birthDate" required>
+      <button type="submit">Register Reindeer</button>
+    </form>
+    <p id="message" class="message"></p>
+  </div>
+
+  <script src="/js/reindeer.js"></script>
+</body>
+</html>
