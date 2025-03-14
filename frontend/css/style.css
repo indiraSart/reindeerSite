@@ -1,64 +1,30 @@
-body {
-  margin: 0;
- 
-  }
-
-.navbar {
-  display: flex;
-  justify-content: center;
-  
-  
-}
-
-.cta-button {
-  width: 100%;
-  flex-wrap: wrap;
-  flex-direction:column;
-  justify-content: space-evenly;
-  gap: 30px;
-  align-content: center;
-  text-decoration: none;
-  text-align: center;
-  width: 300px;
-  height: 150px;
-  border: 3px solid #6f0d1d;
-  border-radius: 20px;
-  background-color: #6f0d1d;
-  color: white;
-  margin-left: 40px;
-}
-
-
-/*register*/
-
+/* General Styles */
 body {
   display: flex;
   justify-content: center;
   align-items: center;
   height: 100vh;
-  width: 100vw;
+  width: 100%;
   margin: 0;
+  background-color: #f9f9f9;
+  font-family: Arial, sans-serif;
 }
 
-.container {
-  padding: 20px;
-  width: 300px;
-  text-align: center;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
+/* Headings */
 h1 {
   margin-bottom: 20px;
-  font-size: 60px;
+  font-size: 40px;
   color: #333;
+  text-align: center;
 }
 
+/* Form Styles */
 form {
   display: flex;
   flex-direction: column;
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
 }
 
 input {
@@ -68,32 +34,79 @@ input {
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
+  box-sizing: border-box;
 }
 
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  gap: 20px;
+  padding: 10px;
+  background-color: #fff;
+  border-bottom: 2px solid #ddd;
+}
+
+/* Call-to-Action Button */
+.cta-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  text-align: center;
+  width: 300px;
+  height: 150px;
+  border: 3px solid #6f0d1d;
+  border-radius: 20px;
+  background-color: #6f0d1d;
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  transition: background 0.3s, transform 0.2s;
+}
+
+.cta-button:hover {
+  background-color: #991522;
+  transform: scale(1.05);
+}
+
+/* Centered Container (Register, Login) */
+.container {
+  padding: 20px;
+  width: 320px;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Buttons */
 button {
   background-color: #991522;
   color: white;
   border: none;
-  padding: 10px;
+  padding: 12px;
   cursor: pointer;
   font-size: 16px;
   border-radius: 10px;
   margin-top: 10px;
-  margin-left: 20px;
+  transition: background 0.3s;
+  width: 100%;
 }
 
 button:hover {
   background-color: #88212b;
 }
 
+/* Messages */
 .message {
   margin-top: 10px;
   font-size: 14px;
   color: red;
 }
-
-
-
-
-
-
